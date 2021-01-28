@@ -20,7 +20,8 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && mocha --require ts-node/register tests/*.ts -t 300000",
-    "prepublish": "npm run build"
+    "prepublish": "npm run snyk-protect && npm run build",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -48,7 +49,8 @@
     "remix-solidity": "0.3.31",
     "signale": "^1.4.0",
     "web3": "^1.2.4",
-    "winston": "^3.0.0"
+    "winston": "^3.0.0",
+    "snyk": "^1.439.3"
   },
   "peerDependencies": {
     "yo-yoify": "^4.3.0"
@@ -66,5 +68,6 @@
     "standard": "^10.0.3",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.1"
-  }
+  },
+  "snyk": true
 }
