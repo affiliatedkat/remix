@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@types/tape": "^4.2.33",
-    "nyc": "^14.0.0",
+    "nyc": "^15.0.0",
     "remix-lib": "0.4.30",
     "tape": "^4.10.1",
     "ts-node": "^8.0.3",
